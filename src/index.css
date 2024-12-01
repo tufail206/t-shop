@@ -1,0 +1,591 @@
+:root {
+    --primary: #522825;
+    --btn-color: #7E4739;
+    --bg: #270C03;
+}
+/* --------header-section-------- */
+header{
+    background-color: var(--primary);
+    padding: 20px 0;
+}
+
+header .logo{
+    font-size: 30px;
+    color: white;
+    font-family:cursive;
+}
+header ul.desktop-ul li a{
+    color: rgb(221, 221, 221);
+  letter-spacing: 1px;
+}
+header ul.desktop-ul li a:hover{
+    color: white;
+    transition: all .4s;
+}
+header ul.desktop-ul .cart-icons{
+    position: relative;
+}
+header ul.desktop-ul .quantity{
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    color: white;
+    width: 20px;
+    height: 20px;
+    background: var(--btn-color);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+   
+}
+/* --------header-section-end-------- */
+/* -------slider---section--start----- */
+.main-slider-container{
+    overflow: hidden;
+    background-color: var(--bg);
+    padding: 60px 0;
+}
+.coffee{
+
+    color: var(--btn-color);
+    font-family:cursive;
+}
+.slide-contanier{
+    display: flex !important;
+    justify-content:center!important;
+    align-items: center !important;
+    gap: 30px !important;
+}
+.slide-title{
+    color: white;
+    font-size: 60px;
+    font-weight: 600;
+}
+.coffee-btn{
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: none;
+    color: white;
+    background-color: var(--btn-color);
+    font-size: 17px;
+    cursor: pointer;
+}
+
+/* -------slider---section--end----- */
+/* -----best-coffee-section----- */
+.best-coffee-section{
+    padding: 40px 0;
+    
+}
+.best-coffies{
+    margin: 120px 0;
+}
+.best-coffee{
+    width: 33%;
+    box-shadow: 0px 0px 20px -10px black;
+    border-radius: 6px;
+position: relative;  
+padding: 30px 0px 10px 0px;
+cursor: pointer;
+}
+
+.best-coffee-img{
+    width: 60%;
+     position: absolute;
+  top: -44%;
+  left: 20%;
+
+}
+.best-coffee:hover .best-coffee-img{
+    transform:rotate(40deg);
+   transition: all .4s;
+}
+.best-coffee:hover{
+    background-color: var(--btn-color);
+    transition: all .4s;
+    color: white;
+}
+
+.best-coffee-description{
+    padding:70px 0px 0px 0px;
+    margin: 25px 0;
+}
+/* -----best-coffee-section----- */
+/* --------Premium Blen Coffee--- */
+.Premium-Blen-Coffee-section{
+    width: 100%;
+    height: max-content;
+    background-image: url(../public/images/coffee-texture.jpg);
+    background-size: cover;
+    padding: 30px 0;
+    background-position: center;
+}
+.premium-img {
+    width: 34%;
+   animation: premium-roter 30s linear infinite ;
+}
+ @keyframes premium-roter {
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+    
+ }
+ .premium-text {
+     width: 50%;
+
+ }
+ .premium-text .coffee{
+  font-size: 40px;
+  color: black;
+  margin: 20px 0;
+   
+}
+ .premium-text p {
+         margin: 10px 0;
+
+ }
+ .premium-boxs{
+    padding: 10px 20px 0;
+    border-right: 2px solid var(--btn-color);
+    margin: 30px 0;
+ }
+ .cofee-icons{
+    font-size: 30px;
+    padding: 4px;
+    border-radius: 50%;
+    background-color: var(--btn-color);
+    color: white;
+ }
+ /* premium-img */
+/* --------Premium Blen Coffee--- */
+/* -----------contect-container--- */
+.contect-container{
+    padding: 60px 0;
+}
+.contect-container form{
+    width: 30%;
+    margin: 0 auto;
+
+}
+.contect-container form input{
+    width: 100%;
+    padding:10px 6px;
+    margin-bottom: 10px;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+    border: 1px solid var(--btn-color);
+}
+.contect-container form textarea{
+    width: 100%;
+
+    padding: 10px 6px;
+        margin-bottom: 10px;
+        border-radius: 4px;
+        outline: none;
+        border: none;
+        border: 1px solid var(--btn-color);
+}
+.contect-container form button{
+    padding: 6px 16px;
+    color: white;
+    border: none;
+    outline: none;
+font-size: 17px;
+border-radius: 6px;
+    background-color: var(--btn-color);
+    cursor: pointer;
+}
+/* -----------contect-container--- */
+/* ---------about-css------- */
+
+
+.about {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+}
+
+/* Mission Section */
+.mission {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+/* Specialties Section */
+.specialties {
+    background-color: #f3f3f3;
+    padding: 60px 0;
+}
+
+.specialties-grid {
+    display: flex;
+    justify-content: space-around;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.specialty-item {
+    background: #fff;
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.specialty-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.specialty-item h3 {
+    margin: 15px 0;
+}
+
+.specialty-item p {
+    padding: 0 10px 15px;
+    font-size: 1rem;
+}
+
+/* Values Section */
+.values {
+    background-color: #e8e8e8;
+    padding: 60px 0;
+}
+
+.values-list {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.value-item {
+    width: 30%;
+    min-width: 280px;
+    background: #fff;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.value-item h4 {
+    color: #333;
+    margin-bottom: 10px;
+}
+/* --------------service-page---------- */
+/* General Styles */
+
+
+/* Services Section */
+.services-page{
+    padding: 30px 0;
+}
+.services {
+    background-color: #f9f9f9;
+    padding: 60px 0;
+}
+
+.services h2 {
+    margin-bottom: 30px;
+}
+
+.services-grid {
+    display: flex;
+    gap: 20px;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background: #fff;
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.service-item img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.service-item h3 {
+    margin: 15px 0;
+}
+
+.service-item p {
+    padding: 0 10px 15px;
+    font-size: 1rem;
+}
+
+/* Testimonials Section */
+.testimonials {
+    background-color: #fff;
+    padding: 60px 0;
+}
+
+.testimonials-grid {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.testimonial-item {
+    background: #f4f4f4;
+    width: 30%;
+    min-width: 280px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.testimonial-item p {
+    font-style: italic;
+}
+
+.testimonial-item h4 {
+    margin-top: 15px;
+    color: #5b3e2b;
+}
+
+/* Contact Section */
+.contact {
+    background: #5b3e2b;
+    color: #fff;
+    padding: 60px 0;
+    text-align: center;
+}
+
+.contact h3 {
+    margin-bottom: 20px;
+}
+
+.contact p {
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+.contact .btn {
+    background: #dcdbd8;
+    color: #5b3e2b;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+
+
+/* ---------about-css------- */
+/* --------footer-section--------- */
+footer{
+   
+    width: 100%;
+    height: max-content;
+    background-size: cover;
+    background-image: url(../public/images/coffee-footer.jpg);
+    background-position:100%;
+    padding: 40px 0;
+  
+}
+.footer-box{
+    width: 20%;
+}
+.coffee-des{
+    color: rgb(39, 39, 39);
+    text-align: left;
+}
+.address-text{
+    text-align: left;
+    color: #522825;
+}
+.footer-box ul li a {
+    color: rgb(92, 29, 29);
+}
+.footer-box ul li:hover{
+    transform: scale(1.02);
+   transition: all .4s;
+}
+.footer-icons li {
+    font-size: 25px;
+}
+/* --------footer-section-end-------- */
+   .mobile-ul  , .bars{
+       display: none !important;
+   }
+/* Responsive Design */
+@media (max-width: 768px) {
+
+    .desktop-ul {
+        display: none !important;
+    }
+    header{
+        position: relative;
+    }
+    .bars{
+        display: block !important;
+        color: white;
+        font-size: 30px;
+    }
+   .mobile-ul .logo{
+    position: absolute;
+    top: 4%;
+    left: 10%;
+
+        z-index: 9876598;
+    }
+         .mobile-ul .cross {
+             position: absolute;
+             top: 4%;
+             right: 10%;
+    font-size: 30px;
+    color: white;
+             z-index: 9876598;
+         }
+    .mobile-ul{
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        position: fixed;
+        top: 0;
+        right: 0;
+        z-index: 9765;
+        width: 100%;
+        height: 100vh;
+        background-color: #522825;
+       
+    }
+ .mobile-ul li a{
+    color: white;
+ }
+    .slide-title {
+        font-size: 38px;
+    }
+
+    .slide-contanier {
+        flex-direction: column !important;
+        gap: 30px !important;
+    }
+
+    .slide-img {
+        width:60%;
+    }
+
+    .best-coffies {
+        flex-wrap: wrap;
+        gap: 60px !important;
+    }
+
+    .best-coffee {
+        width: 45%;
+    }
+
+    .best-coffee-img {
+        top: -20%;
+    }
+
+    h1 {
+        font-size: 2.5rem;
+    }
+
+    .specialties-grid,
+    .values-list {
+        flex-direction: column;
+    }
+
+    .specialty-item,
+    .value-item {
+        width: 100%;
+    }
+/* ------------premium-blen-coffee-content--- */
+.premium-blen-coffee-content{
+    flex-direction: column;
+}
+.premium-img , .premium-text{
+    width: 70%;
+}
+/* -----------form"--- */
+.contect-container form{
+    width: 90%;
+}
+    /* --------service---- */
+
+    .services-grid,
+    .testimonials-grid {
+        flex-direction: column;
+    }
+
+    .service-item,
+    .testimonial-item {
+        width: 100%;
+    }
+
+    .footer-container {
+        flex-wrap: wrap !important;
+        justify-content: center !important;
+    }
+
+    .footer-box {
+        width: 44% !important;
+        color: white;
+    }
+
+    .footer-box p,
+    .footer-box h3,
+    footer li,
+    footer   .footer-box ul li a {
+        color: white;
+    }
+}
+
+@media screen and (max-width:425px) {
+    .slide-img {
+        width: 60%;
+    }
+
+    .best-coffee {
+        width: 94%;
+    }
+
+    .best-coffee-img {
+        top: -30%;
+    }
+
+    .premium-blen-coffee-content {
+        flex-direction: column;
+    }
+
+    .premium-blen-coffee-content .premium-img,
+    .premium-text {
+        width: 80%;
+    }
+
+    .premium-list {
+        flex-direction: column;
+    }
+
+    .footer-box {
+        width: 94% !important;
+
+    }
+        .best-coffee-section , .Premium-Blen-Coffee-section{
+            padding: 20px 0 !important;
+        }
+}
