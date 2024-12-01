@@ -1,14 +1,16 @@
 /* General container for products */
 .products-container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 20px;
+    display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+    gap: 30px;
     padding: 20px;
     background-color: #f9f9f9;
 }
 
 /* Product card styling */
 .product-card {
+    width: 30%;
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
@@ -139,7 +141,25 @@ gap: 30px;
 
 /* Responsive design for smaller screens */
 @media (max-width: 768px) {
+    .product-card {
+            width: 38%;}
     .product-image {
         height: 150px;
     }
+}
+@media (max-width: 468px) {
+    .product-card {
+        width: 90%;
+    }
+
+    .product-image {
+        height: 180px;
+    }
+}
+@media (max-width: 320px) {
+    .product-card {
+        width: 98%;
+    }
+
+  
 }
